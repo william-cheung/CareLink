@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="270dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/menuItem1"
+            style="@style/SelectDialogItemStyle"
+            android:text="@string/text_glucose_reminder" />
+
+        <View
+            android:layout_width="250dip"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center"
+            android:background="@color/line_background" />
+
+        <TextView
+            android:id="@+id/menuItem2"
+            style="@style/SelectDialogItemStyle"
+            android:text="@string/text_heart_params_reminder" />
+
+        <View
+            android:layout_width="250dip"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center"
+            android:background="@color/line_background" />
+
+        <TextView
+            android:id="@+id/menuItem3"
+            style="@style/SelectDialogItemStyle"
+            android:text="@string/text_drugs_reminder" />
+
+        <View
+            android:layout_width="250dip"
+            android:layout_height="0.5dip"
+            android:layout_gravity="center"
+            android:background="@color/line_background" />
+
+        <TextView
+            android:id="@+id/menuItem4"
+            style="@style/SelectDialogItemStyle"
+            android:layout_gravity="center"
+            android:text="@string/text_insulin_reminder" />
+    </LinearLayout>
+
+</LinearLayout>
+    

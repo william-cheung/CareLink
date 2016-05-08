@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Options For Adding Record -->
+    <string name="title_activity_record_options">添加记录</string>
+    <string name="text_record_option_glucose">血糖</string>
+    <string name="text_record_option_blood_pressure">血压</string>
+    <string name="text_record_option_insulin">胰岛素</string>
+    <string name="text_record_option_drugs">服药</string>
+    <string name="text_record_option_weight">体重</string>
+    <string name="text_record_option_sports">运动</string>
+    <string name="text_record_option_discomfort">不适</string>
+    <string name="text_record_option_others">其他</string>
+    <string name="message_cannot_add_record_of_future">您不能添加未来时间的记录!</string>
+    <string name="message_cannot_add_record_long_time_ago_format">您不能添加 %d 天之前的记录!</string>
+    
+    <!-- Glucose Record -->
+    <string name="title_activity_record_glucose">血糖记录</string>
+    <string name="text_glucose_tag0">早餐前</string>
+    <string name="text_glucose_tag1">午餐前</string>
+    <string name="text_glucose_tag2">晚餐前</string>
+    <string name="text_glucose_tag3">睡前</string>
+    <string name="text_glucose_tag4">早餐后</string>
+    <string name="text_glucose_tag5">午餐后</string>
+    <string name="text_glucose_tag6">晚餐后</string>
+    <string name="text_glucose_tag7">随机</string>
+    <string name="text_glucose_value">血糖值(mmol/L)：</string>
+    <string name="text_glucose_unit">mmol/L</string>
+    <string name="text_record_date">记录时间：</string>
+    <string name="text_note">备注</string>
+    <string name="title_activity_glucose_note">血糖备注</string>
+    <string name="text_glucose_note0">饮食原因</string>
+    <string name="text_glucose_note1">药物漏用</string>
+    <string name="text_glucose_note2">药物超量</string>
+    <string name="text_glucose_note3">过度劳累</string>
+    <string name="text_glucose_note4">身体不适</string>
+    <string name="text_glucose_note5">其他疾病</string>
+  
+    
+    <!-- Blood Pressure Record -->
+    <string name="title_activity_record_heart_param">血压记录</string>
+    <string name="text_blood_pressure">血压(mmHg)：</string>
+    <string name="text_systolic_pressure">高压(mmHg)：</string>
+    <string name="text_blood_pressure_unit">mmHg</string>
+    <string name="text_diastolic_pressure">低压(mmHg)：</string>
+    <string name="text_heart_rate">心率(bpm)：</string>
+    <string name="text_heart_rate_unit">bpm</string>
+    <string name="title_activity_heart_param_note">血压备注</string>
+    <string name="text_blood_pressure_note0">饮食原因</string>
+    <string name="text_blood_pressure_note1">药物漏用</string>
+    <string name="text_blood_pressure_note2">药物超量</string>
+    <string name="text_blood_pressure_note3">过度劳累</string>
+    <string name="text_blood_pressure_note4">身体不适</string>
+    <string name="text_blood_pressure_note5">其他疾病</string>
+    
+    
+    <!-- Insulin Record -->
+    <string name="title_activity_record_insulin">胰岛素记录</string>
+    <string name="text_drugs">药品：</string>
+    <string name="text_click_to_select">点击选择</string>
+    <string name="text_drug_dosage">剂量（片/U）：</string>
+    <string name="text_insulin_dosage">剂量（U）：</string>
+    <string name="title_activity_insulin_note">胰岛素备注</string>
+    <string name="text_insulin_note0">未按时服药</string>
+    <string name="text_insulin_note1">身体不适</string>
+    
+    <!-- Drug Record -->
+    <string name="title_activity_record_drugs">服药记录</string>
+    <string name="title_activity_select_drug">选择药品</string>
+    <string name="message_warnning_no_drug_selected">请选择药品</string>
+    <string name="message_warnning_no_dosage">药品剂量不能为空</string>
+    <string name="title_activity_drugs_note">服药备注</string>
+    
+    <!-- Weight Record -->
+    <string name="title_activity_record_weight">体重记录</string>
+    <string name="text_weight">体重(Kg)：</string>
+    <string name="text_weight_unit">Kg</string>
+    <string name="title_activity_weight_note">体重备注</string>
+    <string name="text_weight_note0">饮食增加</string>
+    <string name="text_weight_note1">饮食减少</string>
+    <string name="text_weight_note2">运动量增加</string>
+    <string name="text_weight_note3">运动量减少</string>
+    <string name="text_weight_note4">肠胃不好</string>
+    
+    <!-- Sports Record -->
+    <string name="title_activity_record_sports">运动记录</string>
+    <string name="text_sports">运动项目：</string>
+    <string name="text_duration">运动时长(min)：</string>
+    <string name="text_sports_duration_unit">min</string>
+    <string name="message_warnning_no_sport_selected">请选择运动项目</string>
+    <string name="title_activity_sports_note">运动备注</string>
+    <string name="text_sports_note0">高强度</string>
+    <string name="text_sports_note1">低强度</string>
+    <string name="text_sports_note2">大量出汗</string>
+    <string name="text_sports_note3">微量出汗</string>
+    <string name="title_activity_select_sport">运动项目</string>
+    <string name="text_run_fast">快跑</string>
+    <string name="text_run_slowly">慢跑</string>
+    <string name="text_walk_fast">快走</string>
+    <string name="text_walk_slowly">散步</string>
+    <string name="text_dancing">跳舞</string>
+    <string name="text_swimming">游泳</string>
+    
+    <!-- Discomfort Record -->
+    <string name="title_activity_record_discomfort">不适描述</string>
+    <string name="text_select_discomfort">请选择您的症状：</string>
+    <string name="text_discomfort_tag0">头痛</string>
+    <string name="text_discomfort_tag1">头晕</string>
+    <string name="text_discomfort_tag2">腹痛</string>
+    <string name="text_discomfort_tag3">心脏不适</string>
+    <string name="text_discomfort_tag4">关节痛</string>
+    <string name="text_discomfort_tag5">肢体麻木</string>
+    <string name="text_discomfort_tag6">乏力</string>
+    <string name="text_discomfort_tag7">失眠</string>
+    <string name="text_discomfort_tag8">恶心</string>
+    <string name="text_discomfort_tag9">出血</string>
+    <string name="text_discomfort_tag10">烦躁敏感</string>
+    <string name="text_discomfort_tag11">溃疡</string>
+    <string name="text_discomfort_tag12">尿频</string>
+    <string name="text_discomfort_tag13">尿血</string>
+    <string name="message_warnning_empty_record">记录内容不能为空</string>
+    
+    <!-- Other Record -->
+	<string name="title_activity_record_others">其他记录</string>
+
+    <!-- Calendar -->
+    <string name="date_place_holder">YYYY-MM-DD</string>
+    <string name="year_place_holder">YYYY</string>
+    <string name="month_place_holder">MM</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+        
+    <!-- Records Management Fragment -->
+    <string name="title_activity_record_list">RecordListActivity</string>
+    <string name="text_add_record">添加纪录</string>
+    <string name="text_glucose_record">血糖</string>
+    <string name="text_blood_pressure_record">血压</string>
+    <string name="text_insulin_record">胰岛素</string>
+    <string name="text_drugs_record">服药</string>
+    <string name="text_weight_record">体重</string>
+    <string name="text_sports_record">运动</string>
+    <string name="text_discomfort_record">不适</string>
+    <string name="text_other_record">其他</string>
+    <string name="message_warnning_remove_record">您确定要永久删除这条记录吗？</string>
+    
+</resources>

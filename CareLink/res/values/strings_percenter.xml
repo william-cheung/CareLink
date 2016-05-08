@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+    <!-- Percenter Fragment -->
+    <string name="title_percenter">个人中心</string>
+    <string name="text_health_profile">健康档案</string>
+    <string name="text_account_info">账户信息</string>
+    <string name="text_connect_a_meter">连接血糖仪</string>
+    <string name="text_send_us_feedback">用户反馈</string>
+    <string name="text_manual_sync">手动同步</string>
+    <string name="text_change_passwd">修改密码</string>
+    <string name="text_check_updates">检测新版本</string>
+    <string name="text_agreements">用户协议</string>
+    <string name="text_about_carelink">关于 CareLink</string>
+    <string name="text_contact_us">联系我们</string>
+    <string name="text_logout">退出登录</string>
+    <string name="message_newest_version">已经是最新版本了！</string>
+    
+    <!-- Health Profile -->
+    <string name="title_activity_health_profile">健康档案</string>
+    <string name="text_basic_info">基本信息</string>
+    <string name="text_name">姓名：</string>
+    <string name="text_sex">性别：</string>
+    <string name="text_male">男</string>
+    <string name="text_female">女</string>
+    <string name="text_birth_date">出生日期：</string>
+   	<string name="text_phone">手机号码：</string>
+   	<string name="text_height">身高(cm)：</string>
+    <string name="text_medical_care_info">医疗信息</string>
+    <string name="text_type_of_diabetes">糖尿病类型：</string>
+    <string name="text_illness">所患疾病：</string>
+    <string name="text_years_of_illness">患病年限：</string>
+    <string name="text_allergy_history">药物过敏：</string>
+    <string name="text_current_hospital">所在医院：</string>
+    <string name="text_current_doctor">联系医生：</string>
+    <string name="message_save_success">保存成功！</string>
+
+    <!-- Account Info -->
+    <string name="title_activity_account_info">账户信息</string>
+    <string name="title_activity_change_phone_number">修改绑定手机号</string>
+    <string name="title_activity_change_password">修改密码</string>
+    <string name="hint_input_old_password">输入原密码</string>
+    <string name="hint_input_new_password">输入新密码</string>
+    <string name="hint_retype_new_password">确认新密码</string>
+    <string name="message_exisiting_phone_number">该手机号码已存在！</string>
+    <string name="message_reset_phone_success">修改手机号码成功！</string>
+    <string name="message_reset_password_success">设置密码成功！</string>
+    <string name="message_change_password_success">修改密码成功！</string>
+    <string name="message_change_password_failed">修改密码失败！请检查网络链接</string>
+    <string name="message_new_password_not_match">两次输入的新密码不一致！</string>
+    <string name="message_invalid_old_password">原密码错误！</string>
+    
+    <!-- Send Feedback -->
+    <string name="title_activity_send_feedback">用户反馈</string>
+    <string name="text_send">发送</string>
+    <string name="message_invalid_feedback">反馈信息不能为空！</string>
+    
+    <!-- Sync Meter -->
+    <string name="title_activity_connect_meters">连接血糖仪</string>
+    <string name="text_sync_meter">同步血糖仪数据</string>
+    <string name="message_warnning_no_meter_selected">在同步数据前请先选择您所使用的血糖仪类型</string>
+    <string name="title_activity_select_meter">血糖仪</string>
+    <string name="status_enabling_bluetooth">正在启动蓝牙  . . .</string>
+    <string name="status_falied_to_enable_bluetooth">开启蓝牙失败!</string>
+    <string name="status_connecting_blutooth_device">正在连接蓝牙设备 . . .</string>
+    <string name="status_connecting_meter">正在连接血糖仪  . . .</string>
+    <string name="status_failed_to_connect_blutooth_device">连接蓝牙设备失败！</string>
+    <string name="status_unable_to_connect_meter">连接血糖仪失败!</string>
+    <string name="status_reading_data">正在读取血糖数据  . . .</string>
+    <string name="status_failed_to_read_data">读取血糖数据失败!</string>
+    <string name="status_unabling_bluetooth">正在关闭蓝牙  . . .</string>
+    <string name="status_read_succesfully_format">本次共读入  %d 条血糖记录</string>
+    <string name="status_question_clear_data">是否清除血糖仪中的数据？</string>
+    <string name="operation_retry">重试</string>
+    <string name="operation_ok">确定</string>
+    <string name="operation_yes">是</string>
+    <string name="operation_no">否</string>
+    
+    <!-- Update -->
+    <string name="status_checking_for_update">正在检测新版本 . . .</string>
+    <string name="status_newest_version">已经是最新版本了！</string>
+    <string name="status_network_error">连接网络失败！</string>
+    <string name="status_question_update_format">发现新版本  %s\n是否更新？</string>
+    <string name="status_dowloading_new_version_format">正在下载新版本  . . .\n%2d%%</string>
+    <string name="status_downloading_failed">下载失败！ :(</string>
+    <string name="status_complete_downloading">下载完成！ :)</string>
+    <string name="operation_install">安装</string>
+    <string name="operation_close">关闭</string>
+    <string name="status_"></string>
+
+</resources>

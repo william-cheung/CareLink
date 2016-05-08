@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/default_background">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/tab_bar_bg_layer_list">
+
+        <RadioButton
+            android:id="@+id/tab_button_glucose"
+            style="@style/RadioStyle2"
+            android:checked="true"
+            android:text="@string/text_glucose_statistics" />
+
+        <RadioButton
+            android:id="@+id/tab_button_heart_params"
+            style="@style/RadioStyle2"
+            android:text="@string/text_heart_params_statistics" />
+
+        <RadioButton
+            android:id="@+id/tab_button_weight"
+            style="@style/RadioStyle2"
+            android:text="@string/text_weight_statistics"/>
+
+        <RadioButton
+            android:id="@+id/tab_button_sports"
+            style="@style/RadioStyle2"
+            android:text="@string/text_sports_statistics" />
+    </RadioGroup>
+    
+    
+    <FrameLayout
+        android:id="@+id/fragmentContainer_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

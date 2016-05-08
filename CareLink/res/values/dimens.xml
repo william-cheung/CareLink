@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_horizontal_margin">20dp</dimen>
+    <dimen name="button_vertical_margin">20dp</dimen>
+    <dimen name="button_default_height">48dp</dimen>
+    <dimen name="tab_bar_height">52dp</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="tag_default_height">36dp</dimen>
+    <dimen name="ex_edit_text_border_height">44dp</dimen>
+    <dimen name="ex_edit_text_discription_text_size">18sp</dimen>
+    <dimen name="record_option_item_height">64dp</dimen>
+    <dimen name="record_list_item_height">72dp</dimen>
+    <dimen name="calendar_header_height">48dp</dimen>
+    <dimen name="calendar_grid_item_height">34dp</dimen>
+    <dimen name="calendar_grid_item_selected_radius">14dp</dimen>
+    <dimen name="calendar_grid_view_height">216dp</dimen>
+    
+    <dimen name="default_text_size">18sp</dimen>
+    
+    <dimen name="button_corner_radius">3dp</dimen>
+    
+    <dimen name="tag_corner_radius">3dp</dimen>
+    <dimen name="tag_stroke_width">0.7dip</dimen>
+    
+    <dimen name="tag_weekday_height">28dp</dimen>
+    
+    <dimen name="edit_text_border_width">0.8dip</dimen>
+    
+    <dimen name="number_picker_component_width">220dip</dimen>
+    <dimen name="number_picker_component_width2">140dip</dimen>
+    
+    <dimen name="drop_down_menu_button_width">60dp</dimen>
+    <dimen name="drop_down_menu_width">80dip</dimen>
+    <dimen name="drop_down_menu_item_height">40dip</dimen>
+    
+    <dimen name="line_separator">0.5dip</dimen>
+    
+    <dimen name="alert_dialog_p_width">270dip</dimen>
+    <dimen name="alert_dialog_pn_width">270dip</dimen>
+    <dimen name="button_height_alert_dialog">45dip</dimen>
+    
+    <dimen name="dialog_width">270dip</dimen>
+
+</resources>

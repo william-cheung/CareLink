@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/edit_text_border_layer_list"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:padding="6dp" >
+        
+		<ImageView  
+		    android:id="@+id/imageView_icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@null"
+		    android:contentDescription="@null"/>
+        
+        <TextView
+            android:id="@+id/textView_sportItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/selected"
+            android:visibility="gone"
+            android:contentDescription="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

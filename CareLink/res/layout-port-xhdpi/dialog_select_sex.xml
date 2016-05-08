@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dip"
+    android:layout_height="wrap_content"
+    android:background="@color/default_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/text_sex"
+            android:textColor="@color/default_text_color"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_male"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_female"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_background" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/picker_done_button_selector"
+        android:minHeight="48dip"
+        android:text="@string/text_done"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_of_diabetes">
+        <item>无</item>
+        <item>I型糖尿病</item>
+        <item>II型糖尿病</item>
+        <item>妊娠糖尿病</item>
+        <item>亚糖尿病</item>
+        <item>LADA</item>
+    </string-array>
+    <string-array name="glucose_tags">
+        <item>随机</item>
+        <item>早餐前</item>
+        <item>早餐后</item>
+        <item>午餐前</item>
+        <item>午餐后</item>
+        <item>晚餐前</item>
+        <item>晚餐后</item>
+        <item>睡前</item>
+    </string-array>
+</resources>

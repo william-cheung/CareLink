@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/default_background">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_bar_height"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp" 
+        android:orientation="horizontal" 
+        android:background="@drawable/tab_bar_bg_layer_list">
+
+        <RadioButton
+            android:id="@+id/tab_button_calendar"
+            style="@style/RadioStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_mngmt_selector"
+            android:text="@string/radio1_text" />
+
+        <RadioButton
+            android:id="@+id/tab_button_reminder"
+            style="@style/RadioStyle"
+            android:drawableTop="@drawable/tab_reminder_selector"
+            android:text="@string/radio2_text" />
+
+        <RadioButton
+            android:id="@+id/tab_button_statistics"
+            style="@style/RadioStyle"
+            android:drawableTop="@drawable/tab_statistics_selector"
+            android:text="@string/radio3_text"/>
+
+        <RadioButton
+            android:id="@+id/tab_button_percenter"
+            style="@style/RadioStyle"
+            android:drawableTop="@drawable/tab_pcenter_selector"
+            android:text="@string/radio4_text" />
+    </RadioGroup>
+
+</LinearLayout>

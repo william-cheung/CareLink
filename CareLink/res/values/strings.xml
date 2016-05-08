@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CareLink</string>
+    
+    <!-- Welcome -->
+	<string name="title_activity_welcome">WelcomeActivity</string>
+
+    <!-- Main Tabs of The APP -->
+    <string name="radio1_text">记录管理</string>
+    <string name="radio2_text">提醒管理</string>
+    <string name="radio3_text">统计报告</string>
+    <string name="radio4_text">个人中心</string>
+    
+    <!-- Sign Up -->
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="text_account">账号</string>
+    <string name="text_phone_woc">手机号</string>
+    <string name="text_passwd">密码</string>
+    <string name="text_captcha">验证码</string>
+    <string name="get_captcha">获取验证码</string>  
+    <string name="get_captcha_waiting_format">%02d 秒</string>
+    <string name="message_no_phone_number">手机号码不能为空！</string>
+    <string name="message_no_password">密码不能为空！</string>
+    <string name="message_send_vericode_to_phone_number">我们将发送验证码短信到手机 </string>
+    <string name="register_an_account">注册账号</string>
+    <string name="sign_up">注册</string>
+    <string name="mobile_area_code">+86 |</string>
+    <string name="hint_input_phone_number">请输入手机号</string>
+    <string name="hint_input_captcha">请输入验证码</string>
+    <string name="hint_input_password">请输入密码</string>
+    <string name="hint_retype_password">请确认密码</string>
+    <string name="read_and_agree">我已阅读并同意</string>
+    <string name="register_agreements">各项服务条款</string>
+    <string name="text_passwd_2nd">重复密码</string>
+    <string name="sign_up_done">完成注册</string>
+    <string name="message_password_not_match">两次输入密码不一致！</string>
+    <string name="message_request_captcha_failed">获取验证码失败，请检查网络链接</string>
+    <string name="message_invalid_captcha">验证码错误！</string>
+    <string name="message_phone_number_in_use">手机号  %s 已被注册！</string>
+    <string name="message_complete_info">恭喜您！   您已成功注册， 我们将为您建立健康档案，这些信息对持续关注您的健康非常重要！</string>
+    <string name="message_complete_info_800x480">恭喜您！您已成功注册，我们将为您建立健康档案，这些信息对持续关注您的健康非常重要!</string>
+    <string name="hint_complete_info">提示：点击条目便可编辑</string>
+    
+    <!-- Sign In -->
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="text_forget_passwd">忘记密码</string>
+    <string name="sign_in">登录</string>
+    <string name="message_no_phone_or_password">账号或密码不能为空！</string>
+    <string name="message_invalid_phone_or_password">账号或密码错误！</string>
+    <string name="message_signin_faled_for_network_error">登录失败， 请检查网络链接</string>
+    
+    <!-- Forget Password -->
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="click_to_get_captcha">点击获取验证码</string>
+    <string name="get_captcha_waiting_format2">%2d 秒后重新获取验证码</string>
+    
+    <!-- Common Words -->  
+    <string name="message_network_error">连接服务器失败， 请检查网络链接</string>
+ 	<string name="text_click_to_edit">点击编辑</string>
+    <string name="text_done">完成</string>
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_yes">是</string>
+    <string name="text_no">否</string>
+    <string name="text_close">关闭</string>
+    <string name="text_glucose_meter">血糖仪</string>
+    <string name="text_enter_app">进入应用</string>
+    
+    <!-- Version and Copyright -->
+    <string name="version">Version 0.9.3</string>
+    <string name="copyright_ln1">Copyright © 2015 CareLink, Inc.</string>
+    <string name="copyright_ln2">All Rights Reserved</string>
+    
+    <!-- Contact -->
+    <string name="consumer_service_tel">010-68913173</string>
+    <string name="consumer_service_email">service@carelink.cn</string>
+</resources>

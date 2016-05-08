@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/default_background">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/text_add_record"
+        android:background="@drawable/button_bg_selector_add_record" 
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+    <ListView
+        android:id="@+id/listView_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

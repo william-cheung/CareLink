@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CustomTheme" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">48dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">@color/theme</item>
+    </style>
+
+    <style name="Theme.Welcome" parent="@android:Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/welcome</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="PopupWindowAnim">
+        <item name="android:windowEnterAnimation">@anim/popup_window_scalein</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_scaleout</item>
+    </style>
+
+    <style name="PopupWindowAnim2">
+        <item name="android:windowEnterAnimation">@anim/popup_window_scalein2</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_scaleout2</item>
+    </style>
+
+    <style name="PopupWindowAnim3">
+        <item name="android:windowEnterAnimation">@anim/popup_window_transin</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_transout</item>
+    </style>
+
+    <style name="ActivityTitleTextViewStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_default_height</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_bg_selector</item>
+    </style>
+    
+    <style name="ButtonStyleInDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height_alert_dialog</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_bg_selector_alert_dialog</item>
+    </style>
+    
+    <style name="GetCaptchaButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_default_height</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_bg_selector_add_record</item>
+    </style>
+
+    <style name="RadioStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@drawable/tab_text_color_selector</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="RadioStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/tab_text_color_selector</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/tab_navigation_bg_selector</item>
+    </style>
+
+    <style name="TagStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/tag_default_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/tag_bg_normal</item>
+    </style>
+    
+     <style name="TagStyle2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/tag_weekday_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/tag_bg_normal</item>
+    </style>
+
+    <style name="ExEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ex_edit_text_border_height</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">@drawable/edit_text_border_layer_list</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+     <style name="ReminderOptionStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ex_edit_text_border_height</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">@drawable/edit_text_border_layer_list</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="CalendarHeadTextViewStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="WeekdayTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="DropDownMenuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/drop_down_menu_item_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:background">@drawable/drop_down_menu_item_bg_selector</item>
+    </style>
+    
+    <style name="SelectDialogItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/default_text_color</item>
+        <item name="android:background">@drawable/drop_down_menu_item_bg_selector</item>
+    </style>
+    
+    <style name="DropDownMenuButtonStyle">
+         <item name="android:layout_width">@dimen/drop_down_menu_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/drop_down_menu_button_bg_selector</item>
+    </style>
+
+</resources>

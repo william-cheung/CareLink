@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:id="@+id/view_selectReminderType"
+        style="@style/ExEditTextStyle" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_reminder_type"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <TextView
+            android:id="@+id/textView_reminderType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="@string/text_click_to_select"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/view_selectGlucoseTag"
+        style="@style/ExEditTextStyle" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_glucose_tag"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <TextView
+            android:id="@+id/textView_glucoseTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="@string/text_click_to_edit"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_selectDrugs"
+        style="@style/ExEditTextStyle" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_drugs"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <TextView
+            android:id="@+id/textView_drugName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="@string/text_click_to_select"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_editDosage"
+        style="@style/ExEditTextStyle" 
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_drug_dosage"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <TextView
+            android:id="@+id/textView_dosage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="@string/text_click_to_edit"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_selectReminderTime"
+        style="@style/ExEditTextStyle" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_reminder_time"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <TextView
+            android:id="@+id/textView_reminderTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="@string/text_click_to_select"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_snoozeDuration"
+        style="@style/ExEditTextStyle"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重复："
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_snoozeInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="6dp"
+                android:text="分钟"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_snoozeTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:text="3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="次"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_selectRingTone"
+        style="@style/ExEditTextStyle" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ring_tone"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <TextView
+            android:id="@+id/textView_ringTone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="@string/text_click_to_select"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="20dp"
+        android:background="@color/line_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="每周"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/textView_tag1"
+            style="@style/TagStyle2"
+            android:text="@string/monday" />
+
+        <TextView
+            android:id="@+id/textView_tag2"
+            style="@style/TagStyle2"
+            android:text="@string/tuesday" />
+
+        <TextView
+            android:id="@+id/textView_tag3"
+            style="@style/TagStyle2"
+            android:text="@string/wednesday" />
+
+        <TextView
+            android:id="@+id/textView_tag4"
+            style="@style/TagStyle2"
+            android:text="@string/thursday" />
+
+        <TextView
+            android:id="@+id/textView_tag5"
+            style="@style/TagStyle2"
+            android:text="@string/friday" />
+
+        <TextView
+            android:id="@+id/textView_tag6"
+            style="@style/TagStyle2"
+            android:text="@string/saturday" />
+
+        <TextView
+            android:id="@+id/textView_tag7"
+            style="@style/TagStyle2"
+            android:text="@string/sunday" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_background" />
+
+    <View
+        android:id="@+id/view_blankSpace"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_ok"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="20dp"
+        android:text="@string/text_ok" />
+
+</LinearLayout>

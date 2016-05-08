@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reminders Management Fragment -->
+    <string name="title_reminder_management">提醒管理</string>
+   	<string name="text_add_reminder">添加提醒</string>
+    <string name="message_warnning_no_reminder_type_selected">请选择提醒类型</string>
+    <string name="title_activity_add_reminder">添加提醒</string>
+    <string name="text_glucose_reminder">血糖测量</string>
+    
+    <string name="text_heart_params_reminder">血压测量</string>
+    <string name="text_drugs_reminder">服药</string>
+    <string name="text_insulin_reminder">胰岛素</string>
+    <string name="text_other_reminder">其他</string>
+    <string name="text_reminder_type">类型：</string>
+    <string name="text_glucose_tag">标签：</string>
+    <string name="text_reminder_time">时间：</string>
+    <string name="text_ring_tone">铃声：</string>
+    <string name="text_today">今天</string>
+    <string name="text_every_day">每天</string>
+    <string name="text_reminder_details">详细信息</string>
+    <string name="message_warnning_remove_reminder">您确定要删除这个提醒吗？</string>
+    
+    <!-- Reminder Alarm Dialog -->
+    <string name="text_record">记录</string>
+    <string name="message_reminder_glucose">您该测量血糖了</string>
+    <string name="message_reminder_heart_params">您该测量血压了</string>
+    <string name="message_reminder_drugs">您该服药了</string>
+    <string name="message_reminder_insulin">您该用胰岛素了</string>
+</resources>

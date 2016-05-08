@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Statistics Fragment -->
+    <string name="title_statistics">统计报告</string>
+    <string name="text_glucose_statistics">血糖</string>
+    <string name="text_heart_params_statistics">血压</string>
+    <string name="text_weight_statistics">体重</string>
+    <string name="text_sports_statistics">运动</string>
+    <string name="text_all">全部</string>
+    <string name="text_before_meal">餐前</string>
+    <string name="text_after_meal">餐后</string>
+    <string name="one_week">一周</string>
+    <string name="two_weeks">两周</string>
+    <string name="one_month">30天</string>
+    <string name="two_months">60天</string>
+    <string name="text_average">平均值</string>
+    <string name="text_average_vertical">平\n均\n值</string>
+    <string name="text_in_range">正常</string>
+    <string name="text_above">偏高</string>
+    <string name="text_below">偏低</string>
+    <string name="value_place_holder">--</string>
+    <string name="text_diastolic_pressure_woc">低压(mmHg)</string>
+    <string name="text_systolic_pressure_woc">高压(mmHg)</string>
+    <string name="text_heart_rate_woc">心率(bpm)</string>
+    <string name="date_duration_connector">" - "</string>
+
+</resources>

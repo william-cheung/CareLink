@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_header_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/imageView_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/prev" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView_year"
+            style="@style/CalendarHeadTextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/year_place_holder" />
+
+        <TextView
+            style="@style/CalendarHeadTextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/year" />
+
+        <TextView
+            android:id="@+id/textView_month"
+            style="@style/CalendarHeadTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:text="@string/month_place_holder" />
+
+        <TextView
+            style="@style/CalendarHeadTextViewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/month" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/monday" />
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/tuesday" />
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/wednesday" />
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/thursday" />
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/friday" />
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/saturday" />
+
+        <TextView
+            style="@style/WeekdayTextViewStyle"
+            android:text="@string/sunday" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <GridView
+        android:id="@+id/gridView_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_grid_view_height"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="7"
+        android:scrollbars="none" >
+    </GridView>
+
+    <Button
+        android:id="@+id/button_ok"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_ok" />
+
+</LinearLayout>

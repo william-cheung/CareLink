@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme">#02bf99</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#999999</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="dark_gray">#333333</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="default_background">#f0f0f0</color>
+    
+    <color name="today_background">#7f02bf99</color>
+    
+    <color name="default_text_color">#333333</color>
+    
+    <color name="button_normal">#02BF99</color>
+    <color name="button_pressed">#00A483</color>
+    <color name="button_disabled">#cccccc</color>
+    <color name="add_record_button_disabled">#d7d7d7</color>
+    
+    <color name="tag_selected">#02B994</color>
+    
+    <color name="tag_solid_normal">#fbfbfb</color>
+    <color name="ex_edit_text_solid">#fbfbfb</color>
+    
+    <color name="record_list_item_pressed">#e3e3e3</color>
+    <color name="seperator_color">#ebebeb</color>
+    
+    <color name="line_background">#cccccc</color>
+    <color name="picker_done_button_normal">#f0f0f0</color>
+    <color name="picker_done_button_pressed">#d7d7d7</color>
+    
+    <color name="number_picker_text_focused">#ff33b5e5</color>
+    <color name="number_picker_text_pressed">#ff0099cc</color>
+    <color name="number_picker_text_normal">#777777</color>
+    
+    <color name="line_chart_color">#ff9912</color>
+    
+    <color name="average_value_text_color">#555555</color>
+    <color name="above">#db7046</color>
+    <color name="in_range">#66b34e</color>
+    <color name="below">#eeb211</color>
+
+</resources>

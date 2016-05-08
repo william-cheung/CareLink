@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/text_select_discomfort"
+            android:textSize="@dimen/ex_edit_text_discription_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag0"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag0" />
+
+            <TextView
+                android:id="@+id/discomfort_tag1"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag2"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag2" />
+
+            <TextView
+                android:id="@+id/discomfort_tag3"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag4"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag4" />
+
+            <TextView
+                android:id="@+id/discomfort_tag5"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag6"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag6" />
+
+            <TextView
+                android:id="@+id/discomfort_tag7"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag8"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag8" />
+
+            <TextView
+                android:id="@+id/discomfort_tag9"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag10"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag10" />
+
+            <TextView
+                android:id="@+id/discomfort_tag11"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/discomfort_tag12"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag12" />
+
+            <TextView
+                android:id="@+id/discomfort_tag13"
+                style="@style/TagStyle"
+                android:text="@string/text_discomfort_tag13" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_extraInfo"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/edit_text_border_layer_list"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:singleLine="false" />
+
+        <include layout="@layout/record_date_layout" />
+
+        <Button
+            android:id="@+id/button_ok"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_ok" />
+    </LinearLayout>
+
+</ScrollView>

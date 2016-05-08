@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carelink"
+    android:versionCode="1"
+    android:versionName="0.9.4.2" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	 
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true" />
+
+    <application
+        android:name=".ui.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Welcome"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SignUpActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.CompleteInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.SignInUpDemoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Activities below are all derived from MyActivity -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".ui.RecordOptionsActivity" >
+        </activity>
+        <activity
+            android:name=".ui.RecordGlucoseActivity"
+            android:label="@string/title_activity_record_glucose"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ui.GlucoseNoteActivity"
+            android:label="@string/title_activity_glucose_note" >
+        </activity>
+        <activity
+            android:name=".ui.RecordHeartParamActivity"
+            android:label="@string/title_activity_record_heart_param" >
+        </activity>
+        <activity
+            android:name=".ui.RecordInsulinActivity"
+            android:label="@string/title_activity_record_insulin" >
+        </activity>
+        <activity
+            android:name=".ui.SelectInsulinActivity"
+            android:label="@string/title_activity_select_drug" >
+        </activity>
+        <activity
+            android:name=".ui.InsulinNoteActivity"
+            android:label="@string/title_activity_insulin_note" >
+        </activity>
+        <activity
+            android:name=".ui.RecordDrugsActivity"
+            android:label="@string/title_activity_record_drugs" >
+        </activity>
+        <activity
+            android:name=".ui.SelectDrugActivity"
+            android:label="@string/title_activity_select_drug" >
+        </activity>
+        <activity
+            android:name=".ui.DrugsNoteActivity"
+            android:label="@string/title_activity_drugs_note" >
+        </activity>
+        <activity
+            android:name=".ui.RecordWeightActivity"
+            android:label="@string/title_activity_record_weight" >
+        </activity>
+        <activity
+            android:name=".ui.WeightNoteActivity"
+            android:label="@string/title_activity_weight_note" >
+        </activity>
+        <activity
+            android:name=".ui.RecordSportsActivity"
+            android:label="@string/title_activity_record_sports" >
+        </activity>
+        <activity
+            android:name=".ui.SportsNoteActivity"
+            android:label="@string/title_activity_sports_note" >
+        </activity>
+        <activity
+            android:name=".ui.RecordDiscomfortActivity"
+            android:label="@string/title_activity_record_discomfort"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ui.SelectSportActivity"
+            android:label="@string/title_activity_select_sport" >
+        </activity>
+        <activity
+            android:name=".ui.RecordListActivity"
+            android:label="@string/title_activity_record_list" >
+        </activity>
+        <activity
+            android:name=".ui.HeartParamNoteActivity"
+            android:label="@string/title_activity_heart_param_note" >
+        </activity>
+        <activity
+            android:name=".ui.RecordOthersActivity"
+            android:label="@string/title_activity_record_others" >
+        </activity>
+        <activity
+            android:name=".ui.HealthProfileActivity"
+            android:label="@string/title_activity_health_profile" >
+        </activity>
+        <activity
+            android:name=".ui.ReminderActivity"
+            android:label="@string/title_activity_add_reminder" >
+        </activity>
+        <activity
+            android:name=".ui.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name=".ui.ChangePhoneNumberActivity"
+            android:label="@string/title_activity_change_phone_number" >
+        </activity>
+        <activity
+            android:name=".ui.AccountInfoActivity"
+            android:label="@string/title_activity_account_info" >
+        </activity>
+        <activity
+            android:name=".ui.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password" >
+        </activity>
+        <activity
+            android:name=".ui.ConnectMetersActivity"
+            android:label="@string/title_activity_connect_meters" >
+        </activity>
+        <activity
+            android:name=".ui.SelectMeterActivity"
+            android:label="@string/title_activity_select_meter" >
+        </activity>
+        <activity
+            android:name=".ui.SendFeedbackActivity"
+            android:label="@string/title_activity_send_feedback" >
+        </activity>
+
+        <service
+            android:name=".ui.AlarmService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:process=".ui.serviceProcess" >
+        </service>
+
+        <receiver android:name=".ui.AlarmServiceBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.AlarmAlertBroadcastReceiver" >
+        </receiver>
+    </application>
+
+</manifest>
