@@ -87,7 +87,7 @@ public class FreeStyleFreedom extends GlucoseMeter {
 	}
 	
 	/**
-	 * <p>Download glucose records from the Meter’s memory </p>
+	 * <p>Download glucose records from the Meterâ€™s memory </p>
 	 *
 	 * Returns null if failed 
 	 */
@@ -105,10 +105,10 @@ public class FreeStyleFreedom extends GlucoseMeter {
 		
 		//Log.log("Start Download");
 		
-		String command = "memmem";							// Log.log(command);	
-		send(command.getBytes());							// Log.log(command);
+		String command = "memmem";    // Log.log(command);	
+		send(command.getBytes());     // Log.log(command);
 		
-		String serialNumber = readline();					// Log.log(serialNumber);
+		String serialNumber = readline();  // Log.log(serialNumber);
 		if (serialNumber == null)
 			return null;
 		
