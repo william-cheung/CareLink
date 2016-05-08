@@ -1,0 +1,382 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (351bba41).
+//
+// c:\users\bestofme\desktop\onetouch_ultra\onetouch_ultra\debug\mscomm32.tli
+//
+// Wrapper implementations for Win32 type library C:\WINDOWS\system32\mscomm32.ocx
+// compiler-generated file created 10/22/13 at 07:50:07 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IMSComm wrapper method implementations
+//
+
+inline void IMSComm::PutCDHolding ( VARIANT_BOOL pfCDHolding ) {
+    HRESULT _hr = put_CDHolding(pfCDHolding);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetCDHolding ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CDHolding(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutCDTimeout ( long plCDTimeout ) {
+    HRESULT _hr = put_CDTimeout(plCDTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMSComm::GetCDTimeout ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CDTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutCommID ( long plCommID ) {
+    HRESULT _hr = put_CommID(plCommID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMSComm::GetCommID ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CommID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutCommPort ( short psCommPort ) {
+    HRESULT _hr = put_CommPort(psCommPort);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetCommPort ( ) {
+    short _result = 0;
+    HRESULT _hr = get_CommPort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::Put_CommPort ( short psCommPort ) {
+    HRESULT _hr = put__CommPort(psCommPort);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::Get_CommPort ( ) {
+    short _result = 0;
+    HRESULT _hr = get__CommPort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutCTSHolding ( VARIANT_BOOL pfCTSHolding ) {
+    HRESULT _hr = put_CTSHolding(pfCTSHolding);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetCTSHolding ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_CTSHolding(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutCTSTimeout ( long plCTSTimeout ) {
+    HRESULT _hr = put_CTSTimeout(plCTSTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMSComm::GetCTSTimeout ( ) {
+    long _result = 0;
+    HRESULT _hr = get_CTSTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutDSRHolding ( VARIANT_BOOL pfDSRHolding ) {
+    HRESULT _hr = put_DSRHolding(pfDSRHolding);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetDSRHolding ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DSRHolding(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutDSRTimeout ( long plDSRTimeout ) {
+    HRESULT _hr = put_DSRTimeout(plDSRTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMSComm::GetDSRTimeout ( ) {
+    long _result = 0;
+    HRESULT _hr = get_DSRTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutDTREnable ( VARIANT_BOOL pfDTREnable ) {
+    HRESULT _hr = put_DTREnable(pfDTREnable);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetDTREnable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_DTREnable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutHandshaking ( enum HandshakeConstants phandshake ) {
+    HRESULT _hr = put_Handshaking(phandshake);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum HandshakeConstants IMSComm::GetHandshaking ( ) {
+    enum HandshakeConstants _result;
+    HRESULT _hr = get_Handshaking(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutInBufferSize ( short psInBufferSize ) {
+    HRESULT _hr = put_InBufferSize(psInBufferSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetInBufferSize ( ) {
+    short _result = 0;
+    HRESULT _hr = get_InBufferSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutInBufferCount ( short psInBufferCount ) {
+    HRESULT _hr = put_InBufferCount(psInBufferCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetInBufferCount ( ) {
+    short _result = 0;
+    HRESULT _hr = get_InBufferCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutBreak ( VARIANT_BOOL pfBreak ) {
+    HRESULT _hr = put_Break(pfBreak);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetBreak ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_Break(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutInputLen ( short psInputLen ) {
+    HRESULT _hr = put_InputLen(psInputLen);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetInputLen ( ) {
+    short _result = 0;
+    HRESULT _hr = get_InputLen(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutInterval ( long plInterval ) {
+    HRESULT _hr = put_Interval(plInterval);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long IMSComm::GetInterval ( ) {
+    long _result = 0;
+    HRESULT _hr = get_Interval(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutNullDiscard ( VARIANT_BOOL pfNullDiscard ) {
+    HRESULT _hr = put_NullDiscard(pfNullDiscard);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetNullDiscard ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_NullDiscard(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutOutBufferSize ( short psOutBufferSize ) {
+    HRESULT _hr = put_OutBufferSize(psOutBufferSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetOutBufferSize ( ) {
+    short _result = 0;
+    HRESULT _hr = get_OutBufferSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutOutBufferCount ( short psOutBufferCount ) {
+    HRESULT _hr = put_OutBufferCount(psOutBufferCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetOutBufferCount ( ) {
+    short _result = 0;
+    HRESULT _hr = get_OutBufferCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutParityReplace ( _bstr_t pbstrParityReplace ) {
+    HRESULT _hr = put_ParityReplace(pbstrParityReplace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMSComm::GetParityReplace ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ParityReplace(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMSComm::PutPortOpen ( VARIANT_BOOL pfPortOpen ) {
+    HRESULT _hr = put_PortOpen(pfPortOpen);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetPortOpen ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_PortOpen(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutRThreshold ( short psRThreshold ) {
+    HRESULT _hr = put_RThreshold(psRThreshold);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetRThreshold ( ) {
+    short _result = 0;
+    HRESULT _hr = get_RThreshold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutRTSEnable ( VARIANT_BOOL pfRTSEnable ) {
+    HRESULT _hr = put_RTSEnable(pfRTSEnable);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetRTSEnable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_RTSEnable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutSettings ( _bstr_t pbstrSettings ) {
+    HRESULT _hr = put_Settings(pbstrSettings);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t IMSComm::GetSettings ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Settings(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void IMSComm::PutSThreshold ( short psSThreshold ) {
+    HRESULT _hr = put_SThreshold(psSThreshold);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetSThreshold ( ) {
+    short _result = 0;
+    HRESULT _hr = get_SThreshold(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutOutput ( const _variant_t & pvarOutput ) {
+    HRESULT _hr = put_Output(pvarOutput);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IMSComm::GetOutput ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Output(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IMSComm::PutInput ( const _variant_t & pvarInput ) {
+    HRESULT _hr = put_Input(pvarInput);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t IMSComm::GetInput ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Input(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void IMSComm::PutCommEvent ( short psCommEvent ) {
+    HRESULT _hr = put_CommEvent(psCommEvent);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short IMSComm::GetCommEvent ( ) {
+    short _result = 0;
+    HRESULT _hr = get_CommEvent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutEOFEnable ( VARIANT_BOOL pfEOFEnable ) {
+    HRESULT _hr = put_EOFEnable(pfEOFEnable);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL IMSComm::GetEOFEnable ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = get_EOFEnable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IMSComm::PutInputMode ( enum InputModeConstants InputMode ) {
+    HRESULT _hr = put_InputMode(InputMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum InputModeConstants IMSComm::GetInputMode ( ) {
+    enum InputModeConstants _result;
+    HRESULT _hr = get_InputMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface DMSCommEvents wrapper method implementations
+//
+
+inline HRESULT DMSCommEvents::OnComm ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}

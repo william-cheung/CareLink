@@ -1,0 +1,20 @@
+﻿Build started 11/8/2013 2:43:54 PM.
+     1>Project "C:\Backup\Zhang Aimin\Desktop\onetouch_ultra\onetouch_ultra\onetouch_ultra.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\onetouch_ultra.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\onetouch_ultra.unsuccessfulbuild".
+         Touching "Debug\onetouch_ultra.lastbuildstate".
+     1>Done Building Project "C:\Backup\Zhang Aimin\Desktop\onetouch_ultra\onetouch_ultra\onetouch_ultra.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.09

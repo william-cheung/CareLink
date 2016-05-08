@@ -1,0 +1,443 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (351bba41).
+//
+// c:\users\bestofme\desktop\onetouch_ultra\onetouch_ultra\debug\mscomm32.tlh
+//
+// C++ source equivalent of Win32 type library C:\WINDOWS\system32\mscomm32.ocx
+// compiler-generated file created 10/22/13 at 07:50:07 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("648a5603-2c6e-101b-82b6-000000000014"))
+/* LIBID */ __MSCommLib;
+enum HandshakingConstants;
+enum HandshakeConstants;
+enum ErrorConstants;
+enum CommEventConstants;
+enum OnCommConstants;
+enum InputModeConstants;
+struct __declspec(uuid("e6e17e90-df38-11cf-8e74-00a0c90f26f8"))
+/* dual interface */ IMSComm;
+struct __declspec(uuid("648a5602-2c6e-101b-82b6-000000000014"))
+/* dispinterface */ DMSCommEvents;
+struct /* coclass */ MSComm;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IMSComm, __uuidof(IMSComm));
+_COM_SMARTPTR_TYPEDEF(DMSCommEvents, __uuidof(DMSCommEvents));
+
+//
+// Type library items
+//
+
+enum __declspec(uuid("4b4b0391-6897-11cf-953f-0020afc28c3b"))
+HandshakingConstants
+{
+    NoHandshaking = 0,
+    XonXoff = 1,
+    RtsCts = 2,
+    XonXoffAndRtsCts = 3
+};
+
+enum __declspec(uuid("72f05b40-b530-101b-82b6-000000000014"))
+HandshakeConstants
+{
+    comNone = 0,
+    comXOnXoff = 1,
+    comRTS = 2,
+    comRTSXOnXOff = 3
+};
+
+enum __declspec(uuid("7c4fc790-be64-11cf-95da-0020afc28c3b"))
+ErrorConstants
+{
+    comInvalidPropertyValue = 380,
+    comGetNotSupported = 394,
+    comSetNotSupported = 383,
+    comPortInvalid = 8002,
+    comPortAlreadyOpen = 8005,
+    comPortOpen = 8000,
+    comNoOpen = 8012,
+    comSetCommStateFailed = 8015,
+    comPortNotOpen = 8018,
+    comReadError = 8020,
+    comDCBError = 8021,
+    comBreak = 1001,
+    comCTSTO = 1002,
+    comDSRTO = 1003,
+    comFrame = 1004,
+    comOverrun = 1006,
+    comCDTO = 1007,
+    comRxOver = 1008,
+    comRxParity = 1009,
+    comTxFull = 1010,
+    comDCB = 1011
+};
+
+enum __declspec(uuid("8e6eb360-c3b1-11cf-8e6b-00a0c90f26f8"))
+CommEventConstants
+{
+    comEventBreak = 1001,
+    comEventCTSTO = 1002,
+    comEventDSRTO = 1003,
+    comEventFrame = 1004,
+    comEventOverrun = 1006,
+    comEventCDTO = 1007,
+    comEventRxOver = 1008,
+    comEventRxParity = 1009,
+    comEventTxFull = 1010,
+    comEventDCB = 1011
+};
+
+enum OnCommConstants
+{
+    comEvSend = 1,
+    comEvReceive = 2,
+    comEvCTS = 3,
+    comEvDSR = 4,
+    comEvCD = 5,
+    comEvRing = 6,
+    comEvEOF = 7
+};
+
+enum InputModeConstants
+{
+    comInputModeText = 0,
+    comInputModeBinary = 1
+};
+
+struct __declspec(uuid("e6e17e90-df38-11cf-8e74-00a0c90f26f8"))
+IMSComm : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=Get_CommPort,put=Put_CommPort))
+    short _CommPort;
+    __declspec(property(get=GetCDHolding,put=PutCDHolding))
+    VARIANT_BOOL CDHolding;
+    __declspec(property(get=GetCDTimeout,put=PutCDTimeout))
+    long CDTimeout;
+    __declspec(property(get=GetCommID,put=PutCommID))
+    long CommID;
+    __declspec(property(get=GetCommPort,put=PutCommPort))
+    short CommPort;
+    __declspec(property(get=GetCTSHolding,put=PutCTSHolding))
+    VARIANT_BOOL CTSHolding;
+    __declspec(property(get=GetCTSTimeout,put=PutCTSTimeout))
+    long CTSTimeout;
+    __declspec(property(get=GetDSRHolding,put=PutDSRHolding))
+    VARIANT_BOOL DSRHolding;
+    __declspec(property(get=GetDSRTimeout,put=PutDSRTimeout))
+    long DSRTimeout;
+    __declspec(property(get=GetDTREnable,put=PutDTREnable))
+    VARIANT_BOOL DTREnable;
+    __declspec(property(get=GetHandshaking,put=PutHandshaking))
+    enum HandshakeConstants Handshaking;
+    __declspec(property(get=GetInBufferSize,put=PutInBufferSize))
+    short InBufferSize;
+    __declspec(property(get=GetInBufferCount,put=PutInBufferCount))
+    short InBufferCount;
+    __declspec(property(get=GetBreak,put=PutBreak))
+    VARIANT_BOOL Break;
+    __declspec(property(get=GetInputLen,put=PutInputLen))
+    short InputLen;
+    __declspec(property(get=GetInterval,put=PutInterval))
+    long Interval;
+    __declspec(property(get=GetNullDiscard,put=PutNullDiscard))
+    VARIANT_BOOL NullDiscard;
+    __declspec(property(get=GetOutBufferSize,put=PutOutBufferSize))
+    short OutBufferSize;
+    __declspec(property(get=GetOutBufferCount,put=PutOutBufferCount))
+    short OutBufferCount;
+    __declspec(property(get=GetParityReplace,put=PutParityReplace))
+    _bstr_t ParityReplace;
+    __declspec(property(get=GetPortOpen,put=PutPortOpen))
+    VARIANT_BOOL PortOpen;
+    __declspec(property(get=GetRThreshold,put=PutRThreshold))
+    short RThreshold;
+    __declspec(property(get=GetRTSEnable,put=PutRTSEnable))
+    VARIANT_BOOL RTSEnable;
+    __declspec(property(get=GetSettings,put=PutSettings))
+    _bstr_t Settings;
+    __declspec(property(get=GetSThreshold,put=PutSThreshold))
+    short SThreshold;
+    __declspec(property(get=GetOutput,put=PutOutput))
+    _variant_t Output;
+    __declspec(property(get=GetInput,put=PutInput))
+    _variant_t Input;
+    __declspec(property(get=GetCommEvent,put=PutCommEvent))
+    short CommEvent;
+    __declspec(property(get=GetEOFEnable,put=PutEOFEnable))
+    VARIANT_BOOL EOFEnable;
+    __declspec(property(get=GetInputMode,put=PutInputMode))
+    enum InputModeConstants InputMode;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutCDHolding (
+        VARIANT_BOOL pfCDHolding );
+    VARIANT_BOOL GetCDHolding ( );
+    void PutCDTimeout (
+        long plCDTimeout );
+    long GetCDTimeout ( );
+    void PutCommID (
+        long plCommID );
+    long GetCommID ( );
+    void PutCommPort (
+        short psCommPort );
+    short GetCommPort ( );
+    void Put_CommPort (
+        short psCommPort );
+    short Get_CommPort ( );
+    void PutCTSHolding (
+        VARIANT_BOOL pfCTSHolding );
+    VARIANT_BOOL GetCTSHolding ( );
+    void PutCTSTimeout (
+        long plCTSTimeout );
+    long GetCTSTimeout ( );
+    void PutDSRHolding (
+        VARIANT_BOOL pfDSRHolding );
+    VARIANT_BOOL GetDSRHolding ( );
+    void PutDSRTimeout (
+        long plDSRTimeout );
+    long GetDSRTimeout ( );
+    void PutDTREnable (
+        VARIANT_BOOL pfDTREnable );
+    VARIANT_BOOL GetDTREnable ( );
+    void PutHandshaking (
+        enum HandshakeConstants phandshake );
+    enum HandshakeConstants GetHandshaking ( );
+    void PutInBufferSize (
+        short psInBufferSize );
+    short GetInBufferSize ( );
+    void PutInBufferCount (
+        short psInBufferCount );
+    short GetInBufferCount ( );
+    void PutBreak (
+        VARIANT_BOOL pfBreak );
+    VARIANT_BOOL GetBreak ( );
+    void PutInputLen (
+        short psInputLen );
+    short GetInputLen ( );
+    void PutInterval (
+        long plInterval );
+    long GetInterval ( );
+    void PutNullDiscard (
+        VARIANT_BOOL pfNullDiscard );
+    VARIANT_BOOL GetNullDiscard ( );
+    void PutOutBufferSize (
+        short psOutBufferSize );
+    short GetOutBufferSize ( );
+    void PutOutBufferCount (
+        short psOutBufferCount );
+    short GetOutBufferCount ( );
+    void PutParityReplace (
+        _bstr_t pbstrParityReplace );
+    _bstr_t GetParityReplace ( );
+    void PutPortOpen (
+        VARIANT_BOOL pfPortOpen );
+    VARIANT_BOOL GetPortOpen ( );
+    void PutRThreshold (
+        short psRThreshold );
+    short GetRThreshold ( );
+    void PutRTSEnable (
+        VARIANT_BOOL pfRTSEnable );
+    VARIANT_BOOL GetRTSEnable ( );
+    void PutSettings (
+        _bstr_t pbstrSettings );
+    _bstr_t GetSettings ( );
+    void PutSThreshold (
+        short psSThreshold );
+    short GetSThreshold ( );
+    void PutOutput (
+        const _variant_t & pvarOutput );
+    _variant_t GetOutput ( );
+    void PutInput (
+        const _variant_t & pvarInput );
+    _variant_t GetInput ( );
+    void PutCommEvent (
+        short psCommEvent );
+    short GetCommEvent ( );
+    void PutEOFEnable (
+        VARIANT_BOOL pfEOFEnable );
+    VARIANT_BOOL GetEOFEnable ( );
+    void PutInputMode (
+        enum InputModeConstants InputMode );
+    enum InputModeConstants GetInputMode ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall put_CDHolding (
+        /*[in]*/ VARIANT_BOOL pfCDHolding ) = 0;
+      virtual HRESULT __stdcall get_CDHolding (
+        /*[out,retval]*/ VARIANT_BOOL * pfCDHolding ) = 0;
+      virtual HRESULT __stdcall put_CDTimeout (
+        /*[in]*/ long plCDTimeout ) = 0;
+      virtual HRESULT __stdcall get_CDTimeout (
+        /*[out,retval]*/ long * plCDTimeout ) = 0;
+      virtual HRESULT __stdcall put_CommID (
+        /*[in]*/ long plCommID ) = 0;
+      virtual HRESULT __stdcall get_CommID (
+        /*[out,retval]*/ long * plCommID ) = 0;
+      virtual HRESULT __stdcall put_CommPort (
+        /*[in]*/ short psCommPort ) = 0;
+      virtual HRESULT __stdcall get_CommPort (
+        /*[out,retval]*/ short * psCommPort ) = 0;
+      virtual HRESULT __stdcall put__CommPort (
+        /*[in]*/ short psCommPort ) = 0;
+      virtual HRESULT __stdcall get__CommPort (
+        /*[out,retval]*/ short * psCommPort ) = 0;
+      virtual HRESULT __stdcall put_CTSHolding (
+        /*[in]*/ VARIANT_BOOL pfCTSHolding ) = 0;
+      virtual HRESULT __stdcall get_CTSHolding (
+        /*[out,retval]*/ VARIANT_BOOL * pfCTSHolding ) = 0;
+      virtual HRESULT __stdcall put_CTSTimeout (
+        /*[in]*/ long plCTSTimeout ) = 0;
+      virtual HRESULT __stdcall get_CTSTimeout (
+        /*[out,retval]*/ long * plCTSTimeout ) = 0;
+      virtual HRESULT __stdcall put_DSRHolding (
+        /*[in]*/ VARIANT_BOOL pfDSRHolding ) = 0;
+      virtual HRESULT __stdcall get_DSRHolding (
+        /*[out,retval]*/ VARIANT_BOOL * pfDSRHolding ) = 0;
+      virtual HRESULT __stdcall put_DSRTimeout (
+        /*[in]*/ long plDSRTimeout ) = 0;
+      virtual HRESULT __stdcall get_DSRTimeout (
+        /*[out,retval]*/ long * plDSRTimeout ) = 0;
+      virtual HRESULT __stdcall put_DTREnable (
+        /*[in]*/ VARIANT_BOOL pfDTREnable ) = 0;
+      virtual HRESULT __stdcall get_DTREnable (
+        /*[out,retval]*/ VARIANT_BOOL * pfDTREnable ) = 0;
+      virtual HRESULT __stdcall put_Handshaking (
+        /*[in]*/ enum HandshakeConstants phandshake ) = 0;
+      virtual HRESULT __stdcall get_Handshaking (
+        /*[out,retval]*/ enum HandshakeConstants * phandshake ) = 0;
+      virtual HRESULT __stdcall put_InBufferSize (
+        /*[in]*/ short psInBufferSize ) = 0;
+      virtual HRESULT __stdcall get_InBufferSize (
+        /*[out,retval]*/ short * psInBufferSize ) = 0;
+      virtual HRESULT __stdcall put_InBufferCount (
+        /*[in]*/ short psInBufferCount ) = 0;
+      virtual HRESULT __stdcall get_InBufferCount (
+        /*[out,retval]*/ short * psInBufferCount ) = 0;
+      virtual HRESULT __stdcall put_Break (
+        /*[in]*/ VARIANT_BOOL pfBreak ) = 0;
+      virtual HRESULT __stdcall get_Break (
+        /*[out,retval]*/ VARIANT_BOOL * pfBreak ) = 0;
+      virtual HRESULT __stdcall put_InputLen (
+        /*[in]*/ short psInputLen ) = 0;
+      virtual HRESULT __stdcall get_InputLen (
+        /*[out,retval]*/ short * psInputLen ) = 0;
+      virtual HRESULT __stdcall put_Interval (
+        /*[in]*/ long plInterval ) = 0;
+      virtual HRESULT __stdcall get_Interval (
+        /*[out,retval]*/ long * plInterval ) = 0;
+      virtual HRESULT __stdcall put_NullDiscard (
+        /*[in]*/ VARIANT_BOOL pfNullDiscard ) = 0;
+      virtual HRESULT __stdcall get_NullDiscard (
+        /*[out,retval]*/ VARIANT_BOOL * pfNullDiscard ) = 0;
+      virtual HRESULT __stdcall put_OutBufferSize (
+        /*[in]*/ short psOutBufferSize ) = 0;
+      virtual HRESULT __stdcall get_OutBufferSize (
+        /*[out,retval]*/ short * psOutBufferSize ) = 0;
+      virtual HRESULT __stdcall put_OutBufferCount (
+        /*[in]*/ short psOutBufferCount ) = 0;
+      virtual HRESULT __stdcall get_OutBufferCount (
+        /*[out,retval]*/ short * psOutBufferCount ) = 0;
+      virtual HRESULT __stdcall put_ParityReplace (
+        /*[in]*/ BSTR pbstrParityReplace ) = 0;
+      virtual HRESULT __stdcall get_ParityReplace (
+        /*[out,retval]*/ BSTR * pbstrParityReplace ) = 0;
+      virtual HRESULT __stdcall put_PortOpen (
+        /*[in]*/ VARIANT_BOOL pfPortOpen ) = 0;
+      virtual HRESULT __stdcall get_PortOpen (
+        /*[out,retval]*/ VARIANT_BOOL * pfPortOpen ) = 0;
+      virtual HRESULT __stdcall put_RThreshold (
+        /*[in]*/ short psRThreshold ) = 0;
+      virtual HRESULT __stdcall get_RThreshold (
+        /*[out,retval]*/ short * psRThreshold ) = 0;
+      virtual HRESULT __stdcall put_RTSEnable (
+        /*[in]*/ VARIANT_BOOL pfRTSEnable ) = 0;
+      virtual HRESULT __stdcall get_RTSEnable (
+        /*[out,retval]*/ VARIANT_BOOL * pfRTSEnable ) = 0;
+      virtual HRESULT __stdcall put_Settings (
+        /*[in]*/ BSTR pbstrSettings ) = 0;
+      virtual HRESULT __stdcall get_Settings (
+        /*[out,retval]*/ BSTR * pbstrSettings ) = 0;
+      virtual HRESULT __stdcall put_SThreshold (
+        /*[in]*/ short psSThreshold ) = 0;
+      virtual HRESULT __stdcall get_SThreshold (
+        /*[out,retval]*/ short * psSThreshold ) = 0;
+      virtual HRESULT __stdcall put_Output (
+        /*[in]*/ VARIANT pvarOutput ) = 0;
+      virtual HRESULT __stdcall get_Output (
+        /*[out,retval]*/ VARIANT * pvarOutput ) = 0;
+      virtual HRESULT __stdcall put_Input (
+        /*[in]*/ VARIANT pvarInput ) = 0;
+      virtual HRESULT __stdcall get_Input (
+        /*[out,retval]*/ VARIANT * pvarInput ) = 0;
+      virtual HRESULT __stdcall put_CommEvent (
+        /*[in]*/ short psCommEvent ) = 0;
+      virtual HRESULT __stdcall get_CommEvent (
+        /*[out,retval]*/ short * psCommEvent ) = 0;
+      virtual HRESULT __stdcall put_EOFEnable (
+        /*[in]*/ VARIANT_BOOL pfEOFEnable ) = 0;
+      virtual HRESULT __stdcall get_EOFEnable (
+        /*[out,retval]*/ VARIANT_BOOL * pfEOFEnable ) = 0;
+      virtual HRESULT __stdcall put_InputMode (
+        /*[in]*/ enum InputModeConstants InputMode ) = 0;
+      virtual HRESULT __stdcall get_InputMode (
+        /*[out,retval]*/ enum InputModeConstants * InputMode ) = 0;
+      virtual void __stdcall AboutBox ( ) = 0;
+};
+
+struct __declspec(uuid("648a5602-2c6e-101b-82b6-000000000014"))
+DMSCommEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnComm ( );
+};
+
+struct __declspec(uuid("648a5600-2c6e-101b-82b6-000000000014"))
+MSComm;
+    // [ default ] interface IMSComm
+    // [ default, source ] dispinterface DMSCommEvents
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_MSCommLib =
+    {0x648a5603,0x2c6e,0x101b,{0x82,0xb6,0x00,0x00,0x00,0x00,0x00,0x14}};
+extern "C" const GUID __declspec(selectany) IID_IMSComm =
+    {0xe6e17e90,0xdf38,0x11cf,{0x8e,0x74,0x00,0xa0,0xc9,0x0f,0x26,0xf8}};
+extern "C" const GUID __declspec(selectany) DIID_DMSCommEvents =
+    {0x648a5602,0x2c6e,0x101b,{0x82,0xb6,0x00,0x00,0x00,0x00,0x00,0x14}};
+extern "C" const GUID __declspec(selectany) CLSID_MSComm =
+    {0x648a5600,0x2c6e,0x101b,{0x82,0xb6,0x00,0x00,0x00,0x00,0x00,0x14}};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\users\bestofme\desktop\onetouch_ultra\onetouch_ultra\debug\mscomm32.tli"
+
+#pragma pack(pop)
